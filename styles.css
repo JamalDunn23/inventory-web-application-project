@@ -1,0 +1,14 @@
+img{
+    width: 250px;
+}
+ul{
+    list-style-type: none;
+}
+.Albums{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    text-align: center;
+}
+header{
+    text-align: center;
+}
