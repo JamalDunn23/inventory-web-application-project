@@ -1,103 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Music Store</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Mishka Mallys' Music Store</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">All Posts</a>
-                </li>
-                <li>
-                    <a href="#">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
+      <h1>Mishka Mallys' Music Store</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">All Posts</a>
+          </li>
+          <li>
+            <a href="#">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <div class="Albums">
-            <ul>
-            <li>
-            <img src="images/from-east-ny-with-love.jpeg" alt="eastnewyorkwithlove_cover-art" />
+      <div class="Albums">
+        <ul>
+          <li>
+            <img
+              src="images/from-east-ny-with-love.jpeg"
+              alt="eastnewyorkwithlove_cover-art"
+            />
             <article>
-                <h2>From East New York with Love</h2>
+              <h2>From East New York with Love</h2>
+              <p>
+                This is the greatest artist, producer and songwriter to hail
+                from East New York latest release. Album has 8 tracks, 7 of
+                which he produced within his mothers kitchen. Chef Curry of
+                fruit loops, ask all of allahs' children they'll have no choice
+                but to tell the truth.
+              </p>
+              <aside>
                 <p>
-                    This is the greatest artist, producer and songwriter to hail from East New York latest release.
-                    Album has 8 tracks, 7 of which he produced within his mothers kitchen. Chef Curry of fruit loops,
-                    ask all of allahs' children they'll have no choice but to tell the truth.
-
+                  <span><strong>Run Time:</strong> 24 Minutes, 8 Songs</span>
                 </p>
-                <aside>
-                    <p>
-                        <span><strong>Run Time:</strong> 24 Minutes, 8 Songs</span>
-                    </p>
-                </aside>
-                <button id="Remove">Remove</button>
-            <br/>
-            <br/>
+              </aside>
+              <button id="Remove">Remove</button>
+              <br />
+              <br />
             </article>
-            </li>
-            <li>
+          </li>
+          <li>
             <article>
-                <img src="images/deady-guerrero.jpeg" alt="deadyguerrero_cover-art" />
-                <h3>Deady Guerrero - EP</h3>
+              <img
+                src="images/deady-guerrero.jpeg"
+                alt="deadyguerrero_cover-art"
+              />
+              <h3>Deady Guerrero - EP</h3>
+              <p>
+                A pun on the name of arguably the best Latino wrestler to grace
+                the WWE ring. Deady Guerrero, is the first collection of songs
+                created by Sir Mally Mal whilst pursuiting
+                <strong>HIGHER</strong> education. A coming of age project that
+                deals with the allure of being a college student.
+              </p>
+              <aside>
                 <p>
-                    A pun on the name of arguably the best Latino wrestler to grace the WWE ring. Deady Guerrero,
-                    is the first collection of songs created by Sir Mally Mal whilst pursuiting <strong>HIGHER</strong> education.
-                    A coming of age project that deals with the allure of being a college student.
-
+                  <span><strong>Run Time:</strong> 14 Minutes, 5 Songs</span>
                 </p>
-                <aside>
-                    <p>
-                        <span><strong>Run Time:</strong> 14 Minutes, 5 Songs</span>
-                </aside>
-                <button id="Remove">Remove</button>
-             <br/>   
-            <br/>
+              </aside>
+
+              <button id="Remove">Remove</button>
+              <br />
+              <br />
             </article>
-            </li>
-            <li>
+          </li>
+          <li>
             <article>
-                <img src="images/teamside.jpeg" alt="teamside_cover-art." />
-                <h3>Mally What You Doing?! - EP</h3>
-                <p>
-                    Coming Soon!!!!!!
-                </p>
+              <img src="images/teamside.jpeg" alt="teamside_cover-art." />
+              <h3>Mally What You Doing?! - EP</h3>
+              <p>Coming Soon!!!!!!</p>
 
-                <aside>
-                    <p>
-                        <span><strong>Run Time:</strong> 7 Minutes, 3 Songs</span>
-                    </p>
-                </aside>
-                <button id="Remove">Remove</button>
-            <br/>
+              <aside>
+                <p>
+                  <span><strong>Run Time:</strong> 7 Minutes, 3 Songs</span>
+                </p>
+              </aside>
+              <button id="Remove">Remove</button>
+              <br />
             </article>
-            </li>
-            </ul>
-            <form id = "user_input">
-                <label>Name</label>
-            <br/>
-                <input id ="name" type="text" name ="name"/>
-            <br/>
-                <label>Price</label>
-            <br/>
-                <input id="price" type="number"name ="price"/>
-            <br/>
-            </form>
-        </div>
-      
+          </li>
+        </ul>
+        <form id="user_input">
+          <label>Name</label>
+          <br />
+          <input id="name" type="text" name="name" required />
+          <br />
+          <label>Price</label>
+          <br />
+          <input
+            id="price"
+            type="number"
+            name="price"
+            srep="any"
+            min="0.00"
+            max="100.00"
+            placeholder="$0.00"
+            required
+          />
+          <br />
+          <label>In Stock</label>
+          <input type="radio" value="In Stock" required />
+          <br />
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </form>
+      </div>
     </main>
     <footer>© 2023 The Pressures Of, LLC.</footer>
-
-</body>
-
+  </body>
 </html>
